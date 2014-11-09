@@ -50,10 +50,9 @@ Theme Styles
 *******************************************************************************/
 
 body {
-  box-sizing: border-box;
-  background-image: url(../images/beach.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: black url(../images/beach.jpg) no-repeat fixed center;
+  height: 100%;
+  width:100%
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
