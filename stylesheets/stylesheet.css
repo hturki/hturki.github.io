@@ -51,8 +51,7 @@ Theme Styles
 
 body {
   background: black url(../images/beach.jpg) no-repeat fixed center;
-  height: 100%;
-  width:100%
+  background-size: cover
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
