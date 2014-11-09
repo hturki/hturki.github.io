@@ -62,7 +62,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
-  color: #330066;
 }
 
 h1 {
@@ -96,7 +95,7 @@ p {
 }
 
 a {
-  color: #330066;
+  color: #CC3333;
   transition: color 0.5s ease;
   transition: text-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease;
@@ -165,7 +164,7 @@ Full-Width Styles
 }
 
 #content {
-  color: #330066;
+  color: #CC3333;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
   position: fixed;
