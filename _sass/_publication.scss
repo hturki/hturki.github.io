@@ -5,8 +5,33 @@
 }
 
 .publication-info {
+  padding-bottom: 2.5em;
+
+  h3 {
+    margin: 0;
+  }
+
+  div {
+    padding-bottom: 0.25em;
+  }
+
   display: inline-block;
-  width: 73%;
+  width: 75%;
   padding-left: 3%;
   vertical-align: top;
+
+  .publication-venue {
+    font-size: 0.875em;
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: none;
+    padding-right: 0.25em;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
 }

@@ -10,7 +10,7 @@
     <div class="publication-info">
         <div><h3>{{ post.title }}</h3></div>
         <div>{{ post.authors }}</div>
-        <div>{{ post.venue }}</div>
+        <div class="publication-venue">{{ post.venue }}</div>
         <div>
             {% if post.paper %}
                 <a href="{{post.paper}}">Paper</a>
