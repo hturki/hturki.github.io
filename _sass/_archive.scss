@@ -67,23 +67,15 @@
 }
 
 .archive__item-teaser {
-  border-radius: $border-radius;
-  overflow: hidden;
-  img {
-    width: 100%;
-  }
+  display: inline-block;
+  width: 22%;
 }
 
-.archive__item:hover {
-  .archive__item-teaser {
-    box-shadow: 0 0 10px rgba(#000, 0.25);
-  }
-
-  .archive__item-title {
-    text-decoration: underline;
-  }
+.archive__item-info {
+  display: inline-block;
+  width: 73%;
+  padding-left: 3%;
 }
-
 
 /*
    List view
