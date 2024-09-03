@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Haithem Turki"
 title_separator          : "-"
 name                     : &name "Haithem Turki"
-description              : &description "PhD Student at Carnegie Mellon University"
+description              : &description "Research Scientist at NVIDIA"
 url                      : https://haithemturki.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "hturki/hturki.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Haithem Turki"
   avatar           : "profile.jpeg"
-  bio              : "PhD Student at Carnegie Mellon University"
-  location         : "Pittsburgh, PA"
+  bio              : "Research Scientist at NVIDIA"
+  location         : "Seattle, WA"
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=fuCTftEAAAAJ&hl=en"
