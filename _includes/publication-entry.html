@@ -1,8 +1,8 @@
 <div class="row py-2 publication{% if include.highlight %} publication-selected{% endif %}">
     <div class="col-md-2 col-sm-12 project-thumbnail-parent" align="center">
-        <img class="project-thumbnail {% if post.image_onhover %}pre-hover{% endif %}" src="{{ site.baseurl }}{{ post.image }}" alt="project image" />
+        <img class="project-thumbnail {% if post.image_onhover %}pre-hover{% endif %}" src="{{ site.baseurl }}/images/{{ post.image }}" alt="project image" />
         {% if post.image_onhover %}
-        <img class="project-thumbnail post-hover" src="{{ site.baseurl }}{{ post.image_onhover }}" alt="project image" style="display: none;" />
+        <img class="project-thumbnail post-hover" src="{{ site.baseurl }}/images/{{ post.image_onhover }}" alt="project image" style="display: none;" />
         {% endif %}
     </div>
     <div class="col-md-10 col-sm-12 project-description">

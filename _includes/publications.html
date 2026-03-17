@@ -1,4 +1,4 @@
-{% assign all_publications = site.categories.publications | sort: 'date' | reverse %}
+{% assign all_publications = site.publications | sort: 'date' | reverse %}
 {% if all_publications.size > 0 %}
 {% assign selected_publications = all_publications | where: "selected", true %}
 
