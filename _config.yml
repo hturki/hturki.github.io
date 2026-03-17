@@ -4,6 +4,10 @@ avatar: images/profile.jpeg
 google_analytics: G-3LEJEZQQQC
 url: "https://haithemturki.com"
 
+collections:
+  publications:
+    output: false
+
 future: true
 permalink: /:title/
 
