@@ -1,22 +1,12 @@
-# main links links
-main:
-  - title: "Publications"
-    url: /publications/
-
-#  - title: "Talks"
-#    url: /talks/
-
-#  - title: "Teaching"
-#    url: /teaching/
-    
-#  - title: "Portfolio"
-#    url: /portfolio/
-        
-#  - title: "Blog Posts"
-#    url: /year-archive/
-    
-  - title: "CV"
-    url: /files/cv.pdf
-
-#  - title: "Guide"
-#    url: /markdown/
+- name: About
+  link: /
+  anchor: '#'
+  highlight: true
+- name: Publications
+  link: /
+  anchor: '#publications'
+  highlight: false
+- name: CV
+  link: /files/cv.pdf
+  anchor: ''
+  highlight: false

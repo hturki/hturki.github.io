@@ -1,0 +1,45 @@
+{% assign all_publications = site.categories.publications | sort: 'date' | reverse %}
+{% if all_publications.size > 0 %}
+{% assign selected_publications = all_publications | where: "selected", true %}
+
+<div class="row py-2">
+    <div class="col-md-12" id="publications">
+        <h2>Publications</h2>
+        &nbsp;&nbsp;
+        <span class="pub-toggle">
+            <a href="#" id="show-selected" class="pub-toggle-link">show selected</a>
+            &nbsp;/&nbsp;
+            <a href="#" id="show-all" class="pub-toggle-link active-toggle">show all by date</a>
+        </span>
+    </div>
+</div>
+
+<div id="publications-selected" style="display:none;">
+{% for post in selected_publications %}
+{% include publication-entry.html post=post index=forloop.index offset=0 %}
+{% endfor %}
+</div>
+
+<div id="publications-all">
+{% for post in all_publications %}
+{% include publication-entry.html post=post index=forloop.index offset=100 highlight=post.selected %}
+{% endfor %}
+</div>
+
+<script>
+document.getElementById('show-selected').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('publications-selected').style.display = '';
+    document.getElementById('publications-all').style.display = 'none';
+    this.classList.add('active-toggle');
+    document.getElementById('show-all').classList.remove('active-toggle');
+});
+document.getElementById('show-all').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('publications-selected').style.display = 'none';
+    document.getElementById('publications-all').style.display = '';
+    this.classList.add('active-toggle');
+    document.getElementById('show-selected').classList.remove('active-toggle');
+});
+</script>
+{% endif %}
