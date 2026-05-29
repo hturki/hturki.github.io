@@ -1,8 +1,16 @@
 <div class="row py-2 publication{% if include.highlight %} publication-selected{% endif %}">
     <div class="col-md-2 col-sm-12 project-thumbnail-parent" align="center">
-        <img class="project-thumbnail {% if post.image_onhover %}pre-hover{% endif %}" src="{{ site.baseurl }}/images/{{ post.image }}" alt="project image" />
+        {% assign img_ext = post.image | split: '.' | last | downcase %}
+        {% if img_ext == 'mp4' or img_ext == 'webm' %}
+        {% assign img_base = post.image | split: '.' | first %}
+        <video class="project-thumbnail" autoplay loop muted playsinline preload="metadata" poster="{{ site.baseurl }}/images/{{ img_base }}.jpg">
+            <source src="{{ site.baseurl }}/images/{{ post.image }}" type="video/{{ img_ext }}">
+        </video>
+        {% else %}
+        <img class="project-thumbnail {% if post.image_onhover %}pre-hover{% endif %}" src="{{ site.baseurl }}/images/{{ post.image }}" alt="project image" loading="lazy" />
         {% if post.image_onhover %}
-        <img class="project-thumbnail post-hover" src="{{ site.baseurl }}/images/{{ post.image_onhover }}" alt="project image" style="display: none;" />
+        <img class="project-thumbnail post-hover" src="{{ site.baseurl }}/images/{{ post.image_onhover }}" alt="project image" loading="lazy" style="display: none;" />
+        {% endif %}
         {% endif %}
     </div>
     <div class="col-md-10 col-sm-12 project-description">
