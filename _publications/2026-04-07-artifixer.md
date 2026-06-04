@@ -7,4 +7,5 @@ venue: "SIGGRAPH 2026"
 selected: true
 website: "https://research.nvidia.com/labs/sil/projects/artifixer"
 paper: "https://research.nvidia.com/labs/sil/projects/artifixer/assets/paper.pdf"
+code: "https://github.com/nv-tlabs/artifixer"
 ---
