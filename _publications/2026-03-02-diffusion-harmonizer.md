@@ -6,4 +6,5 @@ authors: "Yuxuan Zhang<sup>*</sup>, Katarina Tothova<sup>*</sup>, Zian Wang, Kan
 venue: "CVPR 2026"
 website: "https://research.nvidia.com/labs/sil/projects/diffusion-harmonizer"
 paper: "https://arxiv.org/abs/2602.24096"
+code: "https://github.com/NVIDIA/harmonizer/"
 ---
