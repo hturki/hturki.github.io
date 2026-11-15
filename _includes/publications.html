@@ -1,5 +1,7 @@
 {% assign all_publications = site.publications | sort: 'date' | reverse %}
 {% if all_publications.size > 0 %}
+{% assign reports = all_publications | where: "report", true %}
+{% assign all_publications = all_publications | where_exp: "p", "p.report != true" %}
 {% assign selected_publications = all_publications | where: "selected", true %}
 
 <div class="row py-2">
@@ -11,6 +13,9 @@
             &nbsp;/&nbsp;
             <a href="#" id="show-all" class="pub-toggle-link active-toggle">show all by date</a>
         </span>
+    </div>
+    <div class="col-md-12">
+        <small><sup>*</sup> equal contribution &nbsp;&nbsp; <sup>†</sup> equal supervision</small>
     </div>
 </div>
 
@@ -24,6 +29,16 @@
 {% for post in all_publications %}
 {% include publication-entry.html post=post index=forloop.index offset=100 highlight=post.selected %}
 {% endfor %}
+{% if reports.size > 0 %}
+<div class="row pt-3">
+    <div class="col-md-12">
+        <h2>Technical Reports</h2>
+    </div>
+</div>
+{% for post in reports %}
+{% include publication-entry.html post=post index=forloop.index offset=200 %}
+{% endfor %}
+{% endif %}
 </div>
 
 <script>
