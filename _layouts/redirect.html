@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ page.title | escape }}</title>
-    <meta name="robots" content="noindex, nofollow">
+    {% if page.indexable %}<link rel="canonical" href="{{ page.redirect_url | absolute_url }}">{% else %}<meta name="robots" content="noindex, nofollow">{% endif %}
     <meta http-equiv="refresh" content="0; url={{ page.redirect_url }}">
     <script>window.location.replace({{ page.redirect_url | jsonify }});</script>
 </head>
